@@ -1,3 +1,26 @@
 *{
     background-color: rgb(255, 212, 219);
 }
+
+dd{
+    background-color: rgb(255, 130, 130);
+}
+
+dt{
+    font-weight: bolder;
+}
+
+#titulo{
+    color: white;
+}
+
+#fotocenter{
+    text-align: center;
+}
+
+.verso{
+    background-color: violet;
+    display: block; /* Para que se comporte como bloque */
+    text-align: center;
+    font-weight: bolder;
+}
