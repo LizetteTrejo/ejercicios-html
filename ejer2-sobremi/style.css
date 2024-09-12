@@ -1,0 +1,21 @@
+*{
+    background-color: rgb(255, 179, 192);
+}
+
+h1, h2, h3{
+    font-family:cursive;
+}
+
+img {
+    height: 400px;
+    width: 320px;
+}
+
+div {
+    text-align: center;
+    font-family: Arial;
+}
+
+ul, ol {
+    font-family: Arial;
+}
