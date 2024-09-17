@@ -30,6 +30,29 @@
                     <br>
                     Fecha de entrega: <input type="date" required>
                 </fieldset>
+                <fieldset>
+                    <legend>Datos de envío</legend>
+                    <select name="" id=""> <!-- El usuario debe hacer scroll infinito hasta encontrar la opción deseada -->
+                        <option value="suc-jardin">Sucursal Jardín de los Recuerdos</option>
+                        <option value="suc- azcap">Sucursal Azcapotzalco</option>
+                        <option value="suc-santafe">Sucursal Santa Fe</option>
+                        <option value="suc-tlalne">Sucursal Tlalnepantla</option>
+                        <option value="suc-ecatepec">Sucursal Ecatepec</option>
+                        <option value="suc-tultepec">Sucursal Tultepec</option>
+                    </select>
+                    <br>
+                    Escoge una sucursal: <input list="sucursal">
+                    <datalist id="sucursal"> <!-- Le permite al usuario escoger a partir de las primeras letras de lo que busca -->
+                        <option value="Sucursal Jardín de los Recuerdos"></option>
+                        <option value="Sucursal Azcapotzalco"></option>
+                        <option value="Sucursal Santa Fe"></option>
+                        <option value="Sucursal Tlalnepantla"></option>
+                        <option value="Sucursal Ecatepec"></option>
+                        <option value="Sucursal Tultepec"></option>
+                    </datalist>
+                    <br>
+                    <input type="submit">
+                </fieldset>
             </form> 
         </section>
     </main>
