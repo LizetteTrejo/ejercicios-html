@@ -1,0 +1,51 @@
+*{
+    background-color: rgb(255, 212, 219);
+}
+
+h2:hover{
+    color: rgb(14, 38, 173);
+    font-family: "Indie Flower", cursive;
+}
+
+dd{
+    background-color: rgb(255, 130, 130);
+}
+
+dt{
+    font-weight: bolder;
+}
+
+#titulo{
+    color: white;
+}
+
+#divmain{
+    text-align: center;
+    border: 10px dotted;
+    padding: 50px 30px 100px; /* TRouBLe Top, Right, Bottom, Left */
+    margin: 30px;
+}
+
+#parrafoprincipal::first-line{
+    color:rgb(126, 16, 16);
+    font-family: Arial;
+}
+
+#parrafoprincipal::first-letter{
+    color: cadetblue;
+    font-size:xx-large;
+}
+
+#photomain{
+    height: 400px;
+    width: 700px;
+    border-radius: 150px;
+    border: 5px dotted;
+}
+
+.verso{
+    background-color: violet;
+    display: block; /* Para que se comporte como bloque */
+    text-align: center;
+    font-weight: bolder;
+}
