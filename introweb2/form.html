@@ -11,28 +11,41 @@
     </header>
     <main>
         <section>
-            <form action="" method="post"><!-- El valor de action es la URL a dónde mandaremos la info del form. En method va el tipo de método a usar (POST) -->
+            <form action="https://formsubmit.co/trejogarcializette@gmail.com" method="post"><!-- El valor de action es la URL a dónde mandaremos la info del form. En method va el tipo de método a usar (POST) -->
                 <fieldset>
                     <legend>Datos básicos de contacto</legend>
-                    Nombre: <input type="text" placeholder="Escribe tu nombre">
+                    <!-- BUENAS PRÁCTICAS -->
+                    <label for="Nombre">Nombre(s): <input id="Nombre" type="text" placeholder="Escribe tu nombre" name="nombre-contacto"></label>
                     <br>
-                    Apellido: <input type="text" placeholder="Escribe tu apellido">
+                    <label for="Apellido">Apellido: <input id="Apellido" type="text" placeholder="Escribe tu apellido" name="apellido-contacto"></label>
                     <br>
-                    E-mail: <input type="email" placeholder="Escribe tu e-mail" required>
+                    <label for="E-mail">E-mail: <input id="E-mail" type="email" placeholder="Escribe tu e-mail" name="email-contacto" required></label>
                     <br>
-                    Teléfono: <input type="tel" placeholder="Escribe tu teléfono">
+                    <label for="Telefono">Teléfono: <input id="Telefono" type="tel" placeholder="Escribe tu teléfono" name="telefono-contacto"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Datos del pedido</legend>
                     <span>Mínimo de VP: 999   Máximo de VP: 3999</span> <span>¡Gracias por su comprensión!</span>
                     <br>
-                    Número de VP: <input type="number" min="999" max="3999" required>
+                    <label for="Num-VP">Número de VP: <input id="Num-VP" type="number" min="999" max="3999" name="vp" required></label>
                     <br>
-                    Fecha de entrega: <input type="date" required>
+                    <label for="Fecha-entrega"></label>Fecha de entrega: <input id="Fecha-entrega" type="date" name="fecha-entrega" required>
                 </fieldset>
                 <fieldset>
                     <legend>Datos de envío</legend>
-                    <select name="" id=""> <!-- El usuario debe hacer scroll infinito hasta encontrar la opción deseada -->
+                    <!-- El atributo name debe ser igual para todas las opciones del input de tipo radio, para que solo se pueda seleccionar una opción y no todas -->
+                    <!-- El valor del atributo de for en el label debe ser igual al valor del atributo de input -->
+                    <label for="recoger-tienda">
+                        <input id="recoger-tienda" type="radio" name="tipo-de-envio"> Recoger en tienda
+                    </label>
+                    <label for="enviar-domicilio">
+                        <input id="enviar-domicilio" type="radio" name="tipo-de-envio"> Enviar a domicilio
+                    </label>
+                    <label for="delivery">
+                        <input id="delivery" type="radio" name="tipo-de-envio"> Delivery
+                    </label>
+                    <br>
+                    <select name="sucursales" id=""> <!-- El usuario debe hacer scroll infinito hasta encontrar la opción deseada -->
                         <option value="suc-jardin">Sucursal Jardín de los Recuerdos</option>
                         <option value="suc- azcap">Sucursal Azcapotzalco</option>
                         <option value="suc-santafe">Sucursal Santa Fe</option>
@@ -41,7 +54,7 @@
                         <option value="suc-tultepec">Sucursal Tultepec</option>
                     </select>
                     <br>
-                    Escoge una sucursal: <input list="sucursal">
+                    <label for="Escoger-sucursal">Escoge una sucursal: <input id="Escoger-sucursal" list="sucursal" name="escoger-suc"></label>
                     <datalist id="sucursal"> <!-- Le permite al usuario escoger a partir de las primeras letras de lo que busca -->
                         <option value="Sucursal Jardín de los Recuerdos"></option>
                         <option value="Sucursal Azcapotzalco"></option>
@@ -51,7 +64,9 @@
                         <option value="Sucursal Tultepec"></option>
                     </datalist>
                     <br>
-                    <input type="submit">
+                    <input type="checkbox" name="tyc" required>Acepto TyC
+                    <br>
+                    <button type="submit" name="boton-envio">Siuuuu</button>
                 </fieldset>
             </form> 
         </section>
