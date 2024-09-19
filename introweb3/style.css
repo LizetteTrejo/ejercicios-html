@@ -1,0 +1,30 @@
+*{ /* Todos los elementos de la página */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{ /* Todos los párrafos de la página */
+    color: #555;
+}
+
+#primero p{ /* Todos los párrafos contenidos en #primero */
+    color: #369;
+}
+
+a{ /* Todos los enlaces de la página */
+    color: #C30;
+}
+
+#primero em{ /* Los elementos <em> contenidos en #primero */
+    color: #0000BB;
+    background-color: #FFFFCC;
+}
+
+.especial{ /* Todos los elementos <em> con la clase "especial" en toda la página */
+    color: #FFFF00;
+    background: #000000;
+}
+
+.normal span{ /* Todos los elementos <span> contenidos en la clase "normal" */
+    font-weight: bold;
+}
