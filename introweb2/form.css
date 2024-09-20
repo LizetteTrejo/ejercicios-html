@@ -1,0 +1,102 @@
+*{ /* Resetear estilos que vienen por default en el navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{ /* Declaramos variables para reutilizar los colores */
+    --color_texto: #5c3d5b;
+    --color_elementos_fieldset: #4d3e6b;
+    --color_boton: #f07360;
+    --color_hover: #86296f;
+    --color_border: #ee4c24;
+}
+
+header{
+    display: flex; /* Visualización en un contenedor es flexible */
+    justify-content: space-between; /* Distribuye uniformemente los elementos a lo largo del contenedor */
+    padding: 10px;
+}
+
+nav>ul{ /* Apuntando a ul desde nav - ul es hija de nav */
+    list-style-type: none; /* Se eliminan los marcadores de la lista, que son bullet points */
+    display: flex;
+}
+
+.elementos-nav{
+    margin: 20px 50px; /* TRouBLe, en sentido de las manecillas del reloj. Cuando hay dos valores el primero es para top y bottom, el segundo para right y left */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.elementos-nav a{ /* Enlaces dentro de los elementos de la barra de nav */
+    text-decoration: none; /* eliminamos el subrayado */
+    color: var(--color_texto); /* Cambiamos el color usando una variable */
+}
+
+.elementos-nav a:hover{ /* Enlaces dentro de los elementos de la barra de nav */
+    text-decoration: underline overline; /* eliminamos el subrayado */
+    color: var(--color_hover); /* Cambiamos el color usando una variable */
+}
+
+h1{
+    color: var(--color_texto);
+    text-align: center;
+}
+
+form{
+    width: 70%;
+    max-width: 800px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 0 auto;
+}
+
+fieldset{
+    border-color: var(--color_border);
+    border-radius: 0.5em;
+    color: var(--color_elementos_fieldset);
+    margin: 20px;
+}
+
+legend::first-letter{
+    color: var(--color_border);
+}
+
+#datos-pedido, #datos-envio{
+    padding: 30px 50px;
+}
+
+#datos-basicos label{
+    display: block; /* Hace que los elementos tengan un salto de línea sin necesidad de un br */
+}
+
+#datos-pedido label{
+    display: block;
+}
+
+#datos-basicos input, #datos-del-pedido input, #datos-de-envio input{
+   border: 2px solid var(--color_elementos_fieldset);
+   width: 200px;
+}
+
+input[type="text"]:focus{ /* Este selector indica que se seleccionaron los inputs con el atributo type="text" y se añade una pseudoclase */
+    background-color: var(--color_elementos_fieldset);
+}
+
+#datos-envio select[name="sucursales"]{
+    width: 200px;
+    border: 2px solid var(--color_elementos_fieldset);
+}
+
+button[type="submit"]{
+    color: var(--color_boton);
+    background-color: var(--color_elementos_fieldset);
+}
+
+button:active{
+    transform: scale(5);
+}
