@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form .css">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&family=Sofadi+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="dinero.png" type="image/x-icon">
     <title>¡Contáctanos!</title>
 </head>
 <body>
     <header>
-        <h1>Haz tus pedidos de copias de Valorant con 1,000,000 VP</h1>
+        <nav>
+            <ul> <!-- Ctrl + Alt + Flecha arriba-abajo para escribir en varias lineas -->
+                <li class="elementos-nav"><a href="https://the1975.com/">Inicio</a></li>
+                <li class="elementos-nav"><a href="https://www.escom.ipn.mx/" target="_blank">¿Quiénes somos?</a></li>
+                <li class="elementos-nav"><a href="https://www.vlr.gg/">Temas de estudio</a></li>
+                <li class="elementos-nav"><a href="https://www.sixflags.com.mx/mexico">Ubicación</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
+            <h1>Haz tus pedidos de copias de Valorant con 1,000,000 VP</h1>
             <form action="https://formsubmit.co/trejogarcializette@gmail.com" method="post"><!-- El valor de action es la URL a dónde mandaremos la info del form. En method va el tipo de método a usar (POST) -->
-                <fieldset>
+                <fieldset id="datos-basicos">
                     <legend>Datos básicos de contacto</legend>
                     <!-- BUENAS PRÁCTICAS -->
                     <label for="Nombre">Nombre(s): <input id="Nombre" type="text" placeholder="Escribe tu nombre" name="nombre-contacto"></label>
-                    <br>
                     <label for="Apellido">Apellido: <input id="Apellido" type="text" placeholder="Escribe tu apellido" name="apellido-contacto"></label>
-                    <br>
                     <label for="E-mail">E-mail: <input id="E-mail" type="email" placeholder="Escribe tu e-mail" name="email-contacto" required></label>
-                    <br>
                     <label for="Telefono">Teléfono: <input id="Telefono" type="tel" placeholder="Escribe tu teléfono" name="telefono-contacto"></label>
                 </fieldset>
-                <fieldset>
+                <fieldset id="datos-pedido">
                     <legend>Datos del pedido</legend>
                     <span>Mínimo de VP: 999   Máximo de VP: 3999</span> <span>¡Gracias por su comprensión!</span>
-                    <br>
                     <label for="Num-VP">Número de VP: <input id="Num-VP" type="number" min="999" max="3999" name="vp" required></label>
-                    <br>
-                    <label for="Fecha-entrega"></label>Fecha de entrega: <input id="Fecha-entrega" type="date" name="fecha-entrega" required>
+                    <label for="Fecha-entrega">Fecha de entrega: <input id="Fecha-entrega" type="date" name="fecha-entrega" required></label>
                 </fieldset>
-                <fieldset>
+                <fieldset id="datos-envio">
                     <legend>Datos de envío</legend>
                     <!-- El atributo name debe ser igual para todas las opciones del input de tipo radio, para que solo se pueda seleccionar una opción y no todas -->
                     <!-- El valor del atributo de for en el label debe ser igual al valor del atributo de input -->
