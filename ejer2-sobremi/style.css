@@ -1,14 +1,51 @@
-*{
-    background-color: rgb(255, 179, 192);
+main{
+    background-color: rgb(252, 216, 222);
 }
 
-h1, h2, h3{
-    font-family:cursive;
+h2{
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
 }
 
-img {
+.navbar{
+    background-color: rgb(250, 157, 173);
+}
+
+
+h1, img{
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+.imgcnm {
     height: 400px;
-    width: 320px;
+    width: 400px;
+}
+
+img{
+    height: 600px;
+    width: 420px;
+}
+
+#valo, #mine, #bf, #ktl, #c1, #c2, #amiru1, #amiru2, #v1, #w1{
+    height: 300px;
+    width: 400px;
+}
+
+.col, .card-title{
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.list-group, .card-text{
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+.texto-bio{
+    color: black;
 }
 
 div {
@@ -19,3 +56,25 @@ div {
 ul, ol {
     font-family: Arial;
 }
+
+p{
+    font-size: 20px;
+}
+
+.carousel-caption{
+    background-color: #c5057538;
+}
+
+.title{
+    color: #ffffff;
+}
+
+.wide-image {
+    width: 50%; /* Puedes ajustar este valor según necesites */
+    height: auto; /* Mantener las proporciones */
+}
+
+.card-body{
+        background-color: rgb(252, 216, 222);
+}
+
