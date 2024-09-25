@@ -1,5 +1,5 @@
 main{
-    background-color: rgb(252, 216, 222);
+    background: radial-gradient(circle, rgb(221, 51, 124) 0%, rgb(250, 157, 173) 100%);
 }
 
 h2{
@@ -31,6 +31,11 @@ img{
 #valo, #mine, #bf, #ktl, #c1, #c2, #amiru1, #amiru2, #v1, #w1{
     height: 300px;
     width: 400px;
+    border-radius: 40px;
+}
+
+.card{
+    margin: 30px;
 }
 
 .col, .card-title{
@@ -39,13 +44,24 @@ img{
     font-size: 30px;
 }
 
-.list-group, .card-text{
+.list-group{
+    margin-left: 280px;
     font-family: "Quicksand", sans-serif;
-    text-align: center;
+}
+
+.card-text{
+    font-family: "Quicksand", sans-serif;
 }
 
 .texto-bio{
     color: black;
+}
+
+#clasemedia{
+    margin: 40px 0px 0px 280px;
+}
+#clasederecha{
+    margin: 40px 0px 0px 500px;
 }
 
 div {
@@ -75,6 +91,6 @@ p{
 }
 
 .card-body{
-        background-color: rgb(252, 216, 222);
+    background-color: rgb(252, 216, 222);
 }
 
