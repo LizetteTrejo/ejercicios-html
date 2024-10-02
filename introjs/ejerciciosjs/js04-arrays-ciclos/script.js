@@ -254,3 +254,76 @@ for (const animal of animales ){
     console.log("Hola  " + animal);
     console.log("Holi  " + animal);
   }
+
+// ---------------- forEach -------------------------
+/*
+ Método que se utiliza para iterar colecciones, arreglos.
+ Permite ejecutar una función de callback por cada elemento del arreglo.
+*/
+
+//const imprimirDato = (element, index, array ) => console.log(element, index, array);
+
+const saboresHelados = ["Cereza", "Choco Chips", "Oreo", "Leche Quemada", "Napolitano"];
+
+// saboresHelados.forEach( imprimirDato );
+saboresHelados.forEach( ( helado )=> console.warn("Helado: " + helado) );
+
+/*
+ Método map()
+ Permite transformar cada elemento de un array y devolver un nuevo array 
+ con los resultados. No modifica el array original.
+
+*/
+
+const categorias = ["Skincare", "Sueros", "Maquillaje", "Cremas"];
+console.table( categorias );
+/*
+const listItems = categorias.map( (categoria)=> {
+  return `<li> ${categoria} </li>`
+}    );
+    */
+const listItems = categorias.map( (categoria)=> `<li> ${categoria} </li>` );
+console.table( listItems );
+
+const refCategorias = document.getElementById("categorias");
+console.log(refCategorias.innerHTML);
+
+const stringListItems = listItems.join("");
+console.log( stringListItems );
+
+refCategorias.innerHTML = stringListItems;
+
+/*
+ Realizar un arreglo de productos, que tenga 5 productos para Geckos.
+
+ Mostrar en la interfaz de usuario los productos.
+ - Se puede mostrar como una <ul>
+ * Forma difícil, pro-max, nivel super Sayajin fase 3: mostrar como cards
+*/
+
+const productosGecko = ["Sustrato", "Calcio con vitaminas", "Gusanos", "Agua", "Placa térmica", "Volcán"];
+console.table(productosGecko);
+
+// const listProductosGecko = productosGecko.map((producto) => `<li>${producto}</li>`);
+const listProductosGecko = productosGecko.map((producto) => `
+  <div class="col-6 col-md-4 mt-4">
+    <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">${producto}</h5>
+      </div>
+    </div>
+  </div>
+
+`);
+
+
+console.table(listProductosGecko);
+
+const refProductosGecko = document.getElementById("productos");
+
+const stringProductosGecko = listProductosGecko.join(" ");
+//console.log(stringProductosGecko);
+
+refProductosGecko.innerHTML = stringProductosGecko;
+
+
