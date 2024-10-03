@@ -7,8 +7,8 @@ Primitivo > son inmutables, no tinen atributos ni metodos.
 -NaN
 -null
 -undefined
--biginit - Mención corta
--symbol- Por esta sesión quedará fuera
+-bigint - Mención corta
+-symbol- único e inmutable, es clave de una propiedad de los objetos
 -Tipo Object
 -Tipo Array
 */
