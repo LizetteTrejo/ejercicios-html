@@ -82,3 +82,86 @@ console.log(  3 / 2 * 2  ); //3
 console.log(  2 * 4 / 2**3 ); //1
 console.log(  3 ** 2 ** 3  ); //6561
 console.log( 20 / 4 + 3 * (2 + 3) - 4 ** 2 ); //4
+
+// ------- Operadores de asignación ----------------
+/*
+ Asigna un valor a su operador izquierdo basándose en el valor
+ de su operando derecho:
+
+ asignación =
+ 
+ Operadores abreviados ( compuestos ):
+  op1 += op2  -> op1 = op1 + op2
+  op1 -= op2  -> op1 = op1 - op2
+  op1 *= op2  -> op1 = op1 * op2
+
+*/
+
+// suma unaria
+const dinero = -100;
+let pago = + dinero;
+console.log( dinero, pago);
+const money = "100.5";
+// const amount = money + 500; // 100.5500
+// const amount = parseInt(money) + 500; // 600
+const amount = parseFloat(money) + 500; // 600.5
+// const amount = Number(money) + 500; // 600.5
+// const amount = +money + 500; // 600.5
+console.log( amount );
+
+// Diferencias entre usar Number() y parseInt()
+// - Number convierte enteros y decimales
+// - parseInt convierte solo la parte entera
+console.log( parseInt("10.456")); // 10
+// - Number devuelve NaN si la cadena contiene algún caracter no numérico
+// - parseInt convierte los enteros hasta encontrar una caracter no numérico
+//       Si la entrada no comienza con un valor numérico, devuelve NaN
+
+console.log( parseInt("10-25") ); // 10
+console.log( Number("10-25") ); // NaN
+console.log( Number( true ) ); // 1
+console.log( Number( false ) ); // 0
+console.log( parseInt( true ) ); // NaN
+console.log( 3 * "4" ); // 3 * 4 = 12
+console.log( 3 * Number("4") ); // 3 * 4 = 12
+console.log( 3 * "10-2" ); // 3 * NaN = NaN
+console.log( 3 * parseInt("10-2") ); // 3 * 10 = 30
+// Conversión a booleano
+// En la conversión de boolean los siguientes valores son false:
+// "", 0, null, undefined
+console.log( Boolean(1) ); //true
+console.log( Boolean(1000) ); //true
+console.log( Boolean(-1000) ); //true
+console.log( Boolean("Ya mero nos vamos a comer, me duele la cabeza") ); // true
+console.log( Boolean("") ); // false
+console.log( Boolean(" ") ); // true por que hay un espacio
+
+// Number
+// [] -> 0 , [30] -> 30, [30,33] -> NaN, false -> 0, true -> 1
+
+// String
+// [] -> "" , [12,2] -> "12,2", function(){} -> "funtion(){}", {} -> [object, object]
+console.log( String( [] ), String( [12,2] ) ); // "", 12,2
+console.log( String({name:"sergio", job:"instructor" } ) ); // [object Object]
+console.log( JSON.stringify({name:"sergio", job:"instructor" } ) ); // {"name":"sergio", "job":"instructor" }
+
+// Operador de incremento y decremento en unidad.
+/*
+  Operador de pre-incremento y pre-decremento
+    ++ valor
+    -- valor
+  Operador de post-incremento y post-decremento
+    valor ++
+    valor --
+*/
+let x = 10;
+x++; // x = x + 1;
+console.log( x ); // 11
+let y = 30;
+++y; // y = y + 1;
+console.log( y ); // 31
+
+
+let valorC = 5;
+console.log(  5 + valorC ++ ); // 10
+console.log( valorC ); // 6
