@@ -165,3 +165,73 @@ console.log( y ); // 31
 let valorC = 5;
 console.log(  5 + valorC ++ ); // 10
 console.log( valorC ); // 6
+
+/*
+ * Escribe un programa que muestre por consola (con un print) los
+ * números de 1 a 100 (ambos incluidos y con un salto de línea entre
+ * cada impresión), sustituyendo los siguientes:
+ * - Múltiplos de 3 por la palabra "fizz".
+ * - Múltiplos de 5 por la palabra "buzz".
+ * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
+ */
+
+/* for(let index=1; index<=100; index++){
+  if(index%3==0){
+    console.log("fizz");
+  }else if(index%5==0){
+    console.log("buzz");
+  }else if(index%3==0 && index%5==0){
+    console.log("fizzbuzz");
+  }else{
+    console.log(index);
+  }
+  
+} */
+
+// ====================================================
+
+let diaSemana = 5;
+
+console.log("El día de hoy es el n." + ++diaSemana ); // 6
+                         // diaSemana = diaSemana + 1
+                         // console.log("El día..." + diaSemana );
+console.log("Mañana será el n.: " + diaSemana ); // 6
+
+// =======================================================
+
+let medidaCereal = 30;
+
+console.log("Me comí un puñito de Cereal, ahora tiene: " + --medidaCereal ); // 29
+                                                    // medidaCereal = medidaCereal -1 //29
+                                                    // console.log("Me comí.." + medidaCereal) // 29
+console.log("Me volvió a dar hambre y volví a comer, ahora tiene: " + --medidaCereal); // 28
+                                                    // medidaCereal = medidaCereal -1 // 28
+                                                    // console.log("Me volvió.." + medidaCereal) // 28
+console.log("Lo revisé después y tiene la medida de: " + medidaCereal); // 28
+
+let a = 0;
+let b = 0;
+
+               // b = a
+               // a = a + 1;
+for(  ; a < 3 ; b = a++ ){
+  console.log( a, b); 
+         //   0 , 0
+         //   1 , 0
+         //   2 , 1
+}
+
+console.log( a, b); // a = 3 , b = 2 
+
+a = 0;
+b = 0;
+               // a = a +1;
+               // b = a;
+for(  ; a < 3 ; b = ++a ){
+  console.log( a, b); 
+          //   0, 0
+          //   1, 1
+          //   2, 2
+ 
+}
+console.log( a, b); //  3, 3
