@@ -1,0 +1,11 @@
+#Se ignora la carpeta node_modules
+node_modules
+
+#Ignorar archivos de MAC
+.DS_Store
+
+# ignorar archivos multimedia
+.avi
+.mp4
+.mkv
+.mov

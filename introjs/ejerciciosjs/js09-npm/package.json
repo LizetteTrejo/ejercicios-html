@@ -1,0 +1,28 @@
+{
+  "name": "js09-npm",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto con npm",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LizetteTrejo/ejercicios-html.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "ch46",
+    "javascript"
+  ],
+  "author": "liz trejo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LizetteTrejo/ejercicios-html/issues"
+  },
+  "homepage": "https://github.com/LizetteTrejo/ejercicios-html#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3"
+  }
+}
