@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './navbar.css'
 
 const estiloArial = {
@@ -39,13 +40,13 @@ const Navbar = () => {
         {/* Opciones del menú */}
         <ul className="nav-links" style={ myObjStyle || estiloArial } >
           <li>
-            <a>Home</a>
+            <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <a>About</a>
+            <Link to="/pages/about">About</Link>
           </li>
           <li>
-            <a>Contact</a>
+          <Link to="/pages/contact">Contact</Link>
           </li>
         </ul>
       </nav>
